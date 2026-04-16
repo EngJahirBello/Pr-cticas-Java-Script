@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="js/17fecha-signo.js"></script>
+  </head>
+  <body>
+    <p>Ingrese su fecha:</p>
+    <form class="" >
+      <input type="text" name="txtFec" maxlength="10" size="12"/>
+      <input type="button" onClick="validaFechaMenor(txtFec);" value="Ok"/>
+
+    </form>
+
+
+      <style>
+        .btn-volver-abajo {
+            position: fixed;
+            bottom: 20px; /* Lo separa 20px del borde inferior */
+            left: 50%;    /* Lo mueve a la mitad de la pantalla */
+            transform: translateX(-50%); /* Lo centra perfectamente sobre su propio eje */
+            
+            background-color: #2c3e50;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-family: sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            transition: background-color 0.3s;
+        }
+        
+        .btn-volver-abajo:hover {
+            background-color: #3498db;
+        }
+    </style>
+
+    <a href="indexMenu.html" class="btn-volver-abajo ">← Volver</a>
+
+  </body>
+</html>

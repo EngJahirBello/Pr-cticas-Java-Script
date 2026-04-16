@@ -1,0 +1,50 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Control submit por evento formulario</title>
+<script src="js/14AnadeElimina.js"></script>
+</head>
+<body>
+		<form>
+		<table id="tblUno">
+			<tr>
+				<th>Columna 1</th>
+				<th>Columna 2</th>
+			</tr>
+		</table>
+		<input type="button" value="Agregar" onclick = "agregaLinea();"/>
+		<br/>
+		<input type="button" value="Eliminar" onclick = "eliminaLinea();"/>
+	</form>
+
+
+
+
+	<style>
+        .btn-volver-abajo {
+            position: fixed;
+            bottom: 20px; /* Lo separa 20px del borde inferior */
+            left: 50%;    /* Lo mueve a la mitad de la pantalla */
+            transform: translateX(-50%); /* Lo centra perfectamente sobre su propio eje */
+            
+            background-color: #2c3e50;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-family: sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            transition: background-color 0.3s;
+        }
+        
+        .btn-volver-abajo:hover {
+            background-color: #3498db;
+        }
+    </style>
+
+    <a href="indexMenu.html" class="btn-volver-abajo ">← Volver</a>
+</body>
+</html>

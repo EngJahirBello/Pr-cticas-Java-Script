@@ -1,0 +1,72 @@
+﻿<!DOCTYPE >
+<html>
+<!--
+Tablas de Multiplicar"
+-->
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Tablas de Multiplicar</title>
+	</head>
+	<body>
+		<script language="javascript" src="js/varios.js"></script>
+		<form>
+			Selecciona que n&uacute;mero de tabla
+			<select name="opTabla" id="opTabla">
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+				<option>7</option>
+				<option>8</option>
+				<option>9</option>
+				<option>10</option>
+			</select>
+
+			<p><input type="button" value="Ejecutar"
+						onclick="muestra(opTabla.value, tabla, document.getElementById('contenido'));"/>
+						<br/>
+			</p>
+
+			<div id="contenido" style="visibility:hidden">
+				<table id="tabla" border="2" >
+					<thead>
+						<th>Operaci&oacute;n</th>
+						<th>Resultado</th>
+						<th>Calificacion</th>
+					</thead>
+				</table>
+				<br><br>
+				<input type="button" value="Calificar Examen" onclick="califica(opTabla.value, tabla);"/>
+			</div>
+		</form>
+
+		<style>
+        .btn-volver-abajo {
+            position: fixed;
+            bottom: 20px; /* Lo separa 20px del borde inferior */
+            left: 50%;    /* Lo mueve a la mitad de la pantalla */
+            transform: translateX(-50%); /* Lo centra perfectamente sobre su propio eje */
+            
+            background-color: #2c3e50;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-family: sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            transition: background-color 0.3s;
+        }
+        
+        .btn-volver-abajo:hover {
+            background-color: #3498db;
+        }
+    </style>
+
+    <a href="indexMenu.html" class="btn-volver-abajo ">← Volver</a>
+	</body>
+</html>

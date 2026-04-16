@@ -1,0 +1,76 @@
+/* --- ESTILOS GENERALES --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5; /* Un gris muy claro para contrastar con las tarjetas */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- ENCABEZADO --- */
+.header-menu {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 2.5rem;
+}
+
+.header-menu h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.header-menu p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* --- CONTENEDOR PRINCIPAL --- */
+.contenedor-menu {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 40px 20px;
+}
+
+/* --- CUADRÍCULA DE BOTONES (GRID) --- */
+.grid-menu {
+    display: grid;
+    /* Esto hace que las tarjetas se acomoden solas dependiendo del tamaño de la pantalla */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* --- DISEÑO DE CADA EJERCICIO (TARJETAS) --- */
+.btn-ejercicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.05rem;
+    text-align: center;
+    border-left: 5px solid #2a5298; /* Un detalle de color a la izquierda */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: all 0.3s ease; /* Animación suave para el hover */
+}
+
+/* --- EFECTO AL PASAR EL RATÓN (HOVER) --- */
+.btn-ejercicio:hover {
+    transform: translateY(-5px); /* Se levanta un poco */
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1); /* Sombra más grande */
+    background-color: #2a5298;
+    color: #ffffff;
+    border-left: 5px solid #1e3c72;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar elementos</title>
+    
+    
+    <style>
+        .btn-volver-abajo {
+            position: fixed;
+            bottom: 20px; 
+            left: 50%;    
+            transform: translateX(-50%); 
+            background-color: #2c3e50;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-family: sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            transition: background-color 0.3s;
+        }
+        
+        .btn-volver-abajo:hover {
+            background-color: #3498db;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul id="lista">
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Consectetuer adipiscing elit</li>
+        <li>Sed mattis enim vitae orci</li>
+        <li>Phasellus libero</li>
+        <li>Maecenas nisl arcu</li>
+    </ul>
+
+    <input type="button" value="Agrega elemento DOM" onclick="modifica('D');">
+    <input type="button" value="Agrega elemento HTML" onclick="modifica('H');">
+    <input type="button" value="Elimina elemento" onclick="modifica('R');">
+
+    <script src="js/14AñadeElimina_LI.js"></script>
+
+    <a href="indexMenu.html" class="btn-volver-abajo">← Volver</a>
+
+    
+</body>
+</html>

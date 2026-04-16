@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Juego de Adivina n&uacute;mero</title>
+
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        background-color: blanchedalmond;
+        width: 50%;
+        max-width: 800px;
+        min-width: 480px;
+        margin: 0 auto;
+      }
+
+      .ultimoResultado {
+        color: blanchedalmond;
+        padding: 3px;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <h1>Juego de Adivina n&uacute;mero</h1>
+
+    <p>Se ha generado un valor de entre 1 y 100. Vea si puede adivinarlo en 10 turnos o menos. Le diremos si su estimación fue demasiado alta o demasiado baja.</p>
+
+    <div class="form">
+      <label for="campoAdivina">Ingrese el valor que piensa: </label>
+      <input type="text" id="campoAdivina" class="campoAdivina">
+      <input type="submit" value="Adivina" class="adivinaSubmit">
+    </div>
+
+    <div class="resultParas">
+      <p class="adivinanzas"></p>
+      <p class="ultimoResultado"></p>
+      <p class="bajoOAlto"></p>
+    </div>
+
+
+    <style>
+        .btn-volver-abajo {
+            position: fixed;
+            bottom: 20px; /* Lo separa 20px del borde inferior */
+            left: 50%;    /* Lo mueve a la mitad de la pantalla */
+            transform: translateX(-50%); /* Lo centra perfectamente sobre su propio eje */
+            
+            background-color: #2c3e50;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-family: sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            transition: background-color 0.3s;
+        }
+        
+        .btn-volver-abajo:hover {
+            background-color: #3498db;
+        }
+    </style>
+
+    <script src="js/19AdivinaNumero.js"></script>
+
+    <a href="indexMenu.html" class="btn-volver-abajo ">← Volver</a>
+  </body>
+</html>

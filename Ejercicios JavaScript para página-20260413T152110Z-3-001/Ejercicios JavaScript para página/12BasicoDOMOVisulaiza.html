@@ -1,0 +1,54 @@
+<!DOCTYPE>
+<html lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ejercicio 12 - DOM básico y atributos CSS</title>
+
+<style type="text/css">
+      .oculto { display: none; }
+      .visible { display: inline; }
+</style>
+
+<script src="js/12BasicoDOMOVisulaiza.js"></script>
+
+
+</head>
+
+<body>
+
+<p class="texto">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede.
+  <span id="adicional" class="oculto">Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.
+    Donec lacus neque, vehicula in, eleifend vitae, venenatis ac, felis. Donec arcu. Nam sed tortor nec ipsum aliquam ullamcorper. Duis accumsan metus eu urna. Aenean vitae enim. Integer lacus. Vestibulum venenatis erat eu odio. Praesent id metus.
+    <a id="enlace1"  href="#" onclick="oculta()">ocultar</a><br>
+  </span>
+</p>
+<a id="enlace" href="#" onclick="muestra()">Seguir leyendo</a><br>
+
+<style>
+        .btn-volver-abajo {
+            position: fixed;
+            bottom: 20px; /* Lo separa 20px del borde inferior */
+            left: 50%;    /* Lo mueve a la mitad de la pantalla */
+            transform: translateX(-50%); /* Lo centra perfectamente sobre su propio eje */
+            
+            background-color: #2c3e50;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-family: sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            transition: background-color 0.3s;
+        }
+        
+        .btn-volver-abajo:hover {
+            background-color: #3498db;
+        }
+    </style>
+
+    <a href="indexMenu.html" class="btn-volver-abajo ">← Volver</a>
+</body>
+</html>
